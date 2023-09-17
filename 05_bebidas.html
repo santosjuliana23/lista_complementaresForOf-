@@ -7,9 +7,17 @@
     */
 
     //Entrada
+    let bebidas = ["Cerveja", "Vinho", "Suco Natural", "Tequila", "Água", "Refrigerante", "Vodka"];
+    
 
 
     //Processamento
+    for(bebida of bebidas){
+        const alcool = prompt(`${bebida} é alcoolico?(S ou N)`).toUpperCase();
+        if(alcool == "N"){
+            document.write(`${bebida}<br>`)
+        }
+    }
 
 
     //Saída

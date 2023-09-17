@@ -7,12 +7,28 @@
     No final do programa apresente os estados com as suas respectivas cidades. Porém, ordene a apresentação das listas, apresentando de forma decrescente pela quantidade de cidades que o estado possui.
     */
 
-    //Entrada
+    //Entrada 
     let cidades = ["Porto Alegre", "Curitiba", "Florianópolis", "Joinville", "Blumenau", "Gramado", "Santa Maria", "Londrina", "Itajaí"];
-    const est = prompt(`a qual estado pertence cada uma das cidades?`);
-    
-    //Processamento
+    let SC = [];
+    let RS = [];
+    let PR = [];
+    let estadoS = [SC, RS, PR] ;
 
+    for(cidade of cidades){
+        const estado = prompt(`informe a qual estado ${cidade} pertence.(SC, RS, PR)`).toUpperCase();
+        if (estado == "SC") {
+            SC.push(cidade)
+        }
+        else if (estado == "RS") {
+            RS.push(cidade)
+        }
+        else if (estado == "PR") {
+            PR.push(cidade)
+        }
+    }
+    estadoS.sort((a, b) => b.length - a.length);
+    document.write(`ordem decrescente = ${estadoS}, sendo sc = ${SC}, rs = ${RS}, pr = ${PR}.`);
+    
 
     //Saída
 

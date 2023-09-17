@@ -8,11 +8,16 @@
     */
 
     //Entrada
+    let nomes = ["Hilário", "Rafaela", "José", "Bárbara", "Fábio", "Júlia"];
+    let nomedepois = [];
 
 
     //Processamento
+    for(nome of nomes){
+        nomedepois.push(nome.replace(`á`,`a`).replace(`é`,`e`).replace(`í`,`i`).replace(`ó`,`o`).replace(`ú`,`u`))
+    }
 
-
+    document.write(nomedepois)
     //Saída
 
 </script>

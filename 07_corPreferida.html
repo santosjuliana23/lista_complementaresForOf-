@@ -9,10 +9,16 @@
 
     //Entrada
     let cores = ["Branco", "Azul", "Marrom", "Cinza", "Verde", "Amarelo", "Vermelho", "Preto"];
-
-
+    let corpref = [];
+    
     //Processamento
-
+    for(cor of cores){
+        const c = prompt(`você gosta da cor ${cor}? ( S ou N)`).toUpperCase();
+        if (c == "S") {
+            corpref.push(cor)
+        }
+    }
+    document.write(`cores preferidas = ${corpref} quantidade de cores = ${corpref.length}`)
 
     //Saída
 

@@ -6,10 +6,15 @@
     */
 
     //Entrada
-    const palavra = prompt(`informe uma palavra.`-------------------------------------------------------------------+)
+    const palavra =prompt(`informe uma palavra.`).toUpperCase();
+    let quantidade = 0;
 
-    //Processamento
-
+    //Processamento 
+    for(letra of palavra) {
+        if(letra == "A" || letra == "E" || letra == "I" || letra == "O" || letra == "U" ){
+            quantidade++;;       }
+    }
+    document.write(`quantidade de vogais = ${quantidade}, quantidade de consoantes = ${palavra.length - quantidade}`)
 
     //Saída
 
