@@ -16,15 +16,10 @@
 
     for(cidade of cidades){
         const estado = prompt(`informe a qual estado ${cidade} pertence.(SC, RS, PR)`).toUpperCase();
-        if (estado == "SC") {
-            SC.push(cidade)
-        }
-        else if (estado == "RS") {
-            RS.push(cidade)
-        }
-        else if (estado == "PR") {
-            PR.push(cidade)
-        }
+        if (estado == "SC") SC.push(cidade)
+        else if (estado == "RS") RS.push(cidade)
+        else if (estado == "PR") PR.push(cidade)
+        
     }
     estadoS.sort((a, b) => b.length - a.length);
     document.write(`ordem decrescente = ${estadoS}, sendo sc = ${SC}, rs = ${RS}, pr = ${PR}.`);

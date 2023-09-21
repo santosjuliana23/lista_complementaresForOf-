@@ -12,9 +12,7 @@
 
     //Processamento
     for (item of lista) {
-        if(isNaN(item) == false){
-            numeros = numeros + item;
-        }
+        if(isNaN(item) == false) numeros = item + numeros;
     }
     document.write(numeros)
 
